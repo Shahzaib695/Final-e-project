@@ -1,0 +1,305 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins";
+    background-color: #f5fbf7;
+}
+
+body {
+    background-color: #f5fbf7 !important;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul li a {
+    list-style: none;
+}
+
+#hero {
+    /* padding: 0px 30px; */
+    flex-wrap: nowrap !important;
+    /* margin: auto; */
+}
+
+#navigation {
+    display: flex;
+    margin-right: auto;
+    flex-wrap: nowrap !important;
+    margin: 0px 40px;
+    margin-top: 30px;
+    padding: 30px auto;
+    background-color: #f5fbf7;
+    /* justify-content: space-around; */
+    align-items: center;
+}
+
+.navbar-brand {
+    color: #122853;
+    font-weight: 700;
+}
+
+.navbar-brand span {
+    background-color: #014dd5;
+    font-weight: 600;
+    color: #ffffff;
+    border-radius: 5px;
+    margin-right: 5px;
+    padding: 0px 5px;
+}
+
+.nav-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: auto;
+    color: #303030;
+    margin-left: 40px;
+    transition: all ease 0.3s;
+    font-weight: 500;
+    margin: 0px 20px;
+}
+
+.navbar-nav .nav-link {
+    color: #303030 !important;
+    text-align: center;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #014dd5 !important;
+    /* Optional: Darker color on hover */
+}
+
+.nav-link :hover {
+    color: #014dd5;
+}
+
+.nav-button {
+    border-radius: 4px;
+    height: 37px;
+    width: 190px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    background-color: #014dd5;
+    color: #ffffff !important;
+    text-decoration: none;
+}
+
+/* navbar done */
+/* hero section start */
+/* Ensuring the hero image doesn't shrink */
+.hero-img {
+    max-width: 100%;
+    height: auto; /* Maintain aspect ratio */
+}
+
+/* Optional: Adjust the container or image wrapper to better control the image behavior */
+.hero-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.hero-text {
+    flex: 1;
+}
+
+.hero-text-btns {
+    display: flex;
+    gap: 15px;
+}
+
+/* Remove unnecessary flex on hero-img */
+/* Ensure the image does not shrink too much */
+.hero-img {
+    max-width: 100%;
+    height: 90vh; /* Maintain aspect ratio */
+    min-width: 300px; /* Prevent shrinking too much */
+    object-fit: cover;
+}
+
+/* Centering text and buttons */
+.hero-text {
+    margin-top: 30px;
+}
+
+.hero-text-btns {
+    display: flex;
+    gap: 15px;
+    justify-content: center; /* Center buttons on smaller screens */
+}
+
+.hero-text-btns a {
+    background-color: #122853;
+    color: #fff;
+    border-radius: 4px;
+    padding: 10px 20px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    gap: 8px;
+}
+
+.hero-text-btns i {
+    background: #014dd5;
+    width: 18px;
+    height: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 0.5rem;
+}
+
+/* Make sure the image doesn’t shrink too much */
+.hero-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    align-items: center;
+    margin-top: 20px;
+}
+
+
+/* Adjust for screens with max-width 991px */
+@media (max-width: 991px) {
+    .hero-content {
+      display: flex;
+      flex-direction: column; /* Stack content vertically */
+    }
+  
+    .hero-img {
+      order: 2; /* Move the image below the text */
+      margin-top: 30px; /* Add some space above the image */
+      height: auto; /* Keep the image height auto on smaller screens */
+      min-height: 550px; /* Set a minimum height for the image */
+      max-height: 80vh; /* Allow the image to grow but limit it to 70% of the viewport height */
+    }
+  
+    .hero-text {
+      text-align: center; /* Center the text on small screens */
+    }
+  }
+  /* Adjust for screens with max-width 768px */
+@media (max-width: 768px) {
+    .hero-content {
+      display: flex;
+      flex-direction: column; /* Stack content vertically */
+      gap: 15px; /* Add spacing between elements */
+    }
+  
+    .hero-img {
+      order: 2; /* Move the image below the text */
+      margin-top: 20px; /* Reduce space above the image */
+      min-height: 550px; /* Ensure the image maintains a reasonable height */
+      max-height: 80vh; /* Limit the image to 60% of the viewport height */
+    }
+  
+    .hero-text {
+      text-align: center; /* Center the text */
+    }
+  
+    .hero-text h1 {
+      font-size: 1.8rem; /* Smaller font size for the heading */
+    }
+  
+    .hero-text p {
+      font-size: 1rem; /* Adjust paragraph font size */
+      padding: 0 20px; /* Add some padding on smaller screens */
+    }
+  
+    .hero-text-btns {
+        flex-direction: row; /* Keep buttons in a row */
+        justify-content: center; /* Center buttons */
+      }
+    
+      .hero-text-btns a {
+        width: 190px; /* Keep the width of buttons fixed */
+        height: 45px; /* Keep the height of buttons fixed */
+        margin-bottom: 10px; /* Add space between buttons */
+      }
+  
+   
+  }
+  /* button */
+  .button {
+    position: relative;
+    transition: all 0.3s ease-in-out;
+    /* box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2); */
+    padding-block: 0.5rem;
+    padding-inline: 1.25rem;
+    background: #014dd5;
+    border-radius: 9999px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffff;
+    gap: 10px;
+    font-weight: bold;
+    border: 3px solid #ffffff4d;
+    outline: none;
+    overflow: hidden;
+    font-size: 15px;
+    cursor: pointer;
+  }
+  
+
+  .animated-button:hover .circle {
+    width: 220px;
+    height: 220px;
+    opacity: 1;
+  }
+  .bi-arrow-up-right {
+    transition: all 0.3s ease-in-out;
+    color: #ffffff;
+  }
+  
+  .button:hover {
+    transform: scale(1.05);
+    /* border-color: #fff9; */
+  }
+  
+  .button:hover .icon {
+    transform: translate(4px);
+  }
+  
+  .button:hover::before {
+    animation: shine 1.5s ease-out infinite;
+  }
+  
+  .button::before {
+    content: "";
+    position: absolute;
+    width: 100px;
+    height: 100%;
+    background-image: linear-gradient(
+      120deg,
+      rgba(255, 255, 255, 0) 30%,
+      rgba(255, 255, 255, 0.8),
+      rgba(255, 255, 255, 0) 70%
+    );
+    top: 0;
+    left: -100px;
+    opacity: 0.6;
+  }
+  
+  @keyframes shine {
+    0% {
+      left: -100px;
+    }
+  
+    60% {
+      left: 100%;
+    }
+  
+    to {
+      left: 100%;
+    }
+  }
