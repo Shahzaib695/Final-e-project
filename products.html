@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Slider</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/product.css">
+</head>
+
+<body>
+    <div class="card-slider">
+        <div class="card-slider__wrp swiper-wrapper">
+            <div class="card-slider__item swiper-slide">
+                <div class="card-slider__img">
+                    <img src="" alt="">
+                </div>
+                <div class="card-slider__content">
+                    <div class="card-slider__title">
+                        Product 1
+                    </div>
+                    <div class="card-slider__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo
+                        necessitatibus consequatur ratione eveniet excepturi rem fuga exercitationem perspiciatis.
+                        Commodi, minima!</div>
+                    <a href="" class="card-slider__button">Read More</a>
+                </div>
+            </div>
+
+            <div class="card-slider__item swiper-slide">
+                <div class="card-slider__img">
+                    <img src="" alt="">
+                </div>
+                <div class="card-slider__content">
+                    <div class="card-slider__title">
+                        Product 2
+                    </div>
+                    <div class="card-slider__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo
+                        necessitatibus consequatur ratione eveniet excepturi rem fuga exercitationem perspiciatis.
+                        Commodi, minima!</div>
+                    <a href="" class="card-slider__button">Read More</a>
+                </div>
+            </div>
+            <div class="card-slider__item swiper-slide">
+                <div class="card-slider__img">
+                    <img src="" alt="">
+                </div>
+                <div class="card-slider__content">
+                    <div class="card-slider__title">
+                        Product 3
+                    </div>
+                    <div class="card-slider__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo
+                        necessitatibus consequatur ratione eveniet excepturi rem fuga exercitationem perspiciatis.
+                        Commodi, minima!</div>
+                    <a href="" class="card-slider__button">Read More</a>
+                </div>
+            </div>
+            <div class="card-slider__item swiper-slide">
+                <div class="card-slider__img">
+                    <img src="" alt="">
+                </div>
+                <div class="card-slider__content">
+                    <div class="card-slider__title">
+                        Product 4
+                    </div>
+                    <div class="card-slider__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo
+                        necessitatibus consequatur ratione eveniet excepturi rem fuga exercitationem perspiciatis.
+                        Commodi, minima!</div>
+                    <a href="" class="card-slider__button">Read More</a>
+                </div>
+            </div>
+            <div class="card-slider__item swiper-slide">
+                <div class="card-slider__img">
+                    <img src="" alt="">
+                </div>
+                <div class="card-slider__content">
+                    <div class="card-slider__title">
+                        Product 5
+                    </div>
+                    <div class="card-slider__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo
+                        necessitatibus consequatur ratione eveniet excepturi rem fuga exercitationem perspiciatis.
+                        Commodi, minima!</div>
+                    <a href="" class="card-slider__button">Read More</a>
+                </div>
+            </div>
+            <div class="card-slider__item swiper-slide">
+                <div class="card-slider__img">
+                    <img src="" alt="">
+                </div>
+                <div class="card-slider__content">
+                    <div class="card-slider__title">
+                        Product 6
+                    </div>
+                    <div class="card-slider__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo
+                        necessitatibus consequatur ratione eveniet excepturi rem fuga exercitationem perspiciatis.
+                        Commodi, minima!</div>
+                    <a href="" class="card-slider__button">Read More</a>
+                </div>
+            </div>
+
+        </div>
+        <div class="card-slider__pagination"></div>
+    </div>
+</body>
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+<script>
+    var swiper = new Swiper('.card-slider', {
+        spaceBetween: 30,
+        effect: 'fade',
+        loop: true,
+        mousewheell: {
+            invert: false,
+        },
+        pagination: {
+            el: '.card-slider__pagination',
+            clickable: true,
+        }
+    });
+</script>
+
+</html>
