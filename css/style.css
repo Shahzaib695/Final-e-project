@@ -540,7 +540,7 @@ ul li a {
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  max-width: 350px;
+  max-width: 100%;
   border: 5px solid #ffffff;
   padding: 30px;
   /* background-color: #f8d4ff; */
@@ -549,9 +549,8 @@ ul li a {
   transform: translateY(-10px);
 
 } */
-.service-box-container :hover{
-  border: 5px solid #c7d0eb;
-  transform: translateY(-10px);
+.service-box :hover{
+  border: 5px solid #c7d0eb !important;
 }
 .service-box svg{
   font-size: 2rem;
@@ -596,4 +595,39 @@ ul li a {
 }
 .s-box1 svg{
   background-color: #d4e2ff;
+}
+.swiper {
+  width: 100%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.swiper-slide {
+  background-position: center;
+  background-size: cover;
+  width: 300px;
+  height: 300px;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+}
+.swiper-button-next,
+.swiper-button-prev{
+  position: static !important;
+  transform: translate(0,0);
+  margin: 10px !important;
+}
+.service-slide-btns{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2px;
+}
+.swiper-button-next ::after,
+.swiper-button-prev ::after{
+  font-size: 25px !important;
+  font-weight: 800;
+  color: #122853;
 }
