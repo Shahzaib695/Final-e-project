@@ -15,7 +15,7 @@
     }
 
     body {
-      background: #eee;
+      background: #f5f7fb;
       font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
       margin: 0;
       padding: 0;
@@ -70,7 +70,7 @@
       left: 50%;
       transform: translate(-50%, -50%);
       padding: 1.5rem;
-      background-color: rgba(8, 217, 175, 0.8);
+      background-color:  rgb(18, 40, 83, 0.67);
       border-radius: 15px;
       opacity: 0;
       transition: opacity 0.3s ease;
@@ -82,13 +82,13 @@
 
     .product-details h4 {
       font-size: 1.5rem;
-      color: #fff;
+      color: #f5f7fb;
     }
 
     .product-details p {
       font-size: 1rem;
       margin-bottom: 1rem;
-      color: #fff;
+      color: #f5f7fb;
     }
 
     .product-details span {
@@ -109,27 +109,52 @@
   .product-details h4 {
     font-size: 1.2rem; /* Smaller text for titles */
   }
-
+  
   .product-details p {
     font-size: 0.9rem; /* Smaller text for descriptions */
   }
-
+  
   .product-details span {
     font-size: 1rem; /* Smaller text for price */
   }
 }
+/* .swiper-button-next,
+.swiper-button-prev {
+  position: static !important;
+  transform: translate(0, 0);
+  margin: 10px !important;
+}
 
+.service-slide-btns {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2px;
+}
+
+.swiper-button-next ::after,
+.swiper-button-prev ::after {
+  font-size: 25px !important;
+  font-weight: 800;
+  color: #122853;
+} */
+ /* optional */
   </style>
 </head>
 <body>
   <!-- Swiper -->
+  <div class="service-slide-btns">
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+  </div>
   <div class="swiper mySwiper">
     <div class="swiper-wrapper">
       <div class="swiper-slide">
-        <div class="product">
-          <img src="product images/istockphoto-1184723788-612x612.jpg" alt="Product 1">
-          <div class="product-details">
-            <h4>Skin</h4>
+        
+        <div class="product"> 
+            <img src="product images/istockphoto-1184723788-612x612.jpg" alt="Product 1">
+            <div class="product-details">
+              <h4>Skin</h4>
             <p>Lorem ipsum dolor sit amet consectetur.</p>
             <span>$100</span>
           </div>
@@ -227,6 +252,10 @@
         modifier: 1,
         slideShadows: true,
       },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev"
+       },
       pagination: {
         el: ".swiper-pagination",
       },
