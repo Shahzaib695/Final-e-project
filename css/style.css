@@ -821,6 +821,7 @@ ul li a {
 #team{
   max-width: 1200px;
   width: 90%;
+  /* background:#F8F6F0; */
   margin: 80px auto;
 }
 .team-heading{
@@ -881,7 +882,7 @@ ul li a {
 /* products */
 #products {
   padding: 50px 0;
-  background: #f5f7fb;
+  background:linear-gradient(180deg, #E6F7FF, #FFFFFF);
 }
 .products-heading{
   display: flex;
