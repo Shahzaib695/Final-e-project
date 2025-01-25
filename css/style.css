@@ -2,10 +2,15 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Poppins";
+  /* font-family: "Poppins"; */
   /* background-color: #f5fbf7; */
 }
-
+h1,h2,h3,h4,h5,h6{
+  font-family: "Rubik", serif;
+}
+p{
+  font-family: "Poppins", serif;
+}
 body {
   background-color: #f5fbf7 !important;
 }
@@ -130,6 +135,7 @@ ul li a {
 /* Centering text and buttons */
 .hero-text {
   margin-top: 30px;
+  font-weight: 500;
 }
 
 .hero-text-btns {
@@ -893,11 +899,13 @@ ul li a {
 }
 .products-heading h3{
   font-size: 2.4rem;
+  font-weight: 600;
   color: #122853;
 }
 .products-heading p{
   color: #535353;
   font-size: 0.9rem;
+  font-weight: 500;
   letter-spacing: 0.3px;
 }
 .service-slide-btns {
