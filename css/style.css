@@ -134,7 +134,8 @@ ul li a {
 
 /* Centering text and buttons */
 .hero-text {
-  margin-top: 30px;
+  color: #000;
+  /* margin-top: 30px; */
   font-weight: 500;
 }
 
