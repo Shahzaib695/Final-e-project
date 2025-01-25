@@ -28,71 +28,72 @@ ul li a {
   flex-wrap: nowrap !important;
   /* margin: auto; */
 }
-
-#navigation {
+/* Navigation Container */
+/* Navigation Bar */
+.navbar {
   display: flex;
-  margin-right: auto;
-  flex-wrap: nowrap !important;
-  margin: 0px 40px;
-  margin-top: 30px;
-  padding: 30px auto;
+  justify-content: center; /* Center the entire group (brand + nav items) */
+  align-items: center; /* Align items vertically */
+  padding: 10px 20px;
   background-color: #f5fbf7;
-  /* justify-content: space-around; */
-  align-items: center;
+  position: relative; /* Needed for the toggle button positioning */
 }
 
+/* Container */
+.container-fluid {
+  display: flex;
+  justify-content: center; /* Center brand and nav items together */
+  align-items: center;
+  gap: 30px; /* Add space between brand and nav items */
+}
+
+/* Navbar Brand */
 .navbar-brand {
-  color: #122853;
+  font-size: 1.5rem;
   font-weight: 700;
+  color: #122853;
 }
 
 .navbar-brand span {
   background-color: #014dd5;
-  font-weight: 600;
-  color: #ffffff;
-  border-radius: 5px;
-  margin-right: 5px;
-  padding: 0px 5px;
+  color: white;
+  padding: 2px 6px;
+  border-radius: 4px;
 }
 
-.nav-item {
+/* Navbar Links */
+.navbar-nav {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-right: auto;
-  color: #303030;
-  margin-left: 40px;
-  transition: all ease 0.3s;
-  font-weight: 500;
-  margin: 0px 20px;
+  justify-content: center; /* Center nav links */
+  align-items: center; /* Align links vertically */
+  gap: 20px; /* Add spacing between nav links */
 }
 
-.navbar-nav .nav-link {
-  color: #303030 !important;
-  text-align: center;
+.navbar-nav .nav-item .nav-link {
+  color: #303030;
+  font-weight: 500;
+  transition: color 0.3s ease;
 }
 
 .navbar-nav .nav-link:hover {
-  color: #014dd5 !important;
-  /* Optional: Darker color on hover */
-}
-
-.nav-link :hover {
   color: #014dd5;
 }
 
-.nav-button {
-  border-radius: 4px;
-  height: 37px;
-  width: 190px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-weight: 700;
-  background-color: #014dd5;
-  color: #ffffff !important;
-  text-decoration: none;
+/* Toggler Button (for mobile view) */
+.navbar-toggler {
+  position: absolute;
+  top: 50%;
+  right: 20px; /* Keep it to the far right */
+  transform: translateY(-50%);
+  border: none;
+  outline: none;
 }
+
+.navbar-toggler i {
+  font-size: 1.5rem;
+  color: black;
+}
+
 
 /* navbar done */
 /* hero section start */
@@ -134,7 +135,7 @@ ul li a {
 
 /* Centering text and buttons */
 .hero-text {
-  color: #000;
+  color: #122853 !important;
   /* margin-top: 30px; */
   font-weight: 500;
 }
