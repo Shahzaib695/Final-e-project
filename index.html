@@ -635,13 +635,88 @@
               <div class="t-profile-text">
                 <strong>Client Name</strong>
                 <span>From Lahore</span>
+                <div class="t-rating">
+                  <i class="fa-solid fa-stars"></i>
+                  <i class="fa-solid fa-stars"></i>
+                  <i class="fa-solid fa-stars"></i>
+                  <i class="fa-solid fa-stars"></i>
+                  <i class="fa-solid fa-stars"></i>
+                </div>
               </div>
             </div>
+            <!-- feedback ki line -->
+             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id architecto libero assumenda earum? Saepe ratione minima vitae repellat necessitatibus consequatur modi.</p>
           </div>
         </div>
        </div>
     </div>
   </section>
+  <section id="contact-us">
+    <div class="container">
+      <div class="text-center">
+        <h1>Contact Us</h1>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
+        </p>
+      </div>
+  
+      <div class="row">
+        <!-- Contact Information -->
+        <div class="col-1">
+          <div class="address-line">
+            <i class="fa-solid fa-location-dot" onclick="getLocation()" style="cursor: pointer;"></i>
+            <div class="contact-info">
+              <div class="contact-info-title">Address</div>
+              <div>1002 West 5th Ave,</div>
+              <div>Alaska, New York,</div>
+              <div>55060.</div>
+            </div>
+          </div>
+          <div class="address-line">
+            <i class="fa-solid fa-phone"></i>
+            <div class="contact-info">
+              <div class="contact-info-title">Phone</div>
+              <div>0300-0099878</div>
+            </div>
+          </div>
+          <div class="address-line">
+            <i class="fa-regular fa-envelope"></i>
+            <div class="contact-info">
+              <div class="contact-info-title">Email</div>
+              <div>jensen.decor@gmail.com</div>
+            </div>
+          </div>
+        </div>
+  
+        <!-- Contact Form -->
+        <div class="col-2">
+          <form id="contactForm">
+            <h2>Send Message</h2>
+            <div class="form-row">
+              <label for="name">Full Name</label>
+              <input type="text" id="name" class="form-field" placeholder="Enter your full name">
+              <span class="error-message" id="nameError"></span>
+            </div>
+            <div class="form-row">
+              <label for="email">Email</label>
+              <input type="email" id="email" class="form-field" placeholder="Enter your email">
+              <span class="error-message" id="emailError"></span>
+            </div>
+            <div class="form-row">
+              <label for="message">Type your message...</label>
+              <textarea id="message" class="form-field" placeholder="Write your message" rows="3"></textarea>
+              <span class="error-message" id="messageError"></span>
+            </div>
+            <input type="button" class="send-btn" value="Send" onclick="validateForm()">
+          </form>
+        </div>
+      </div>
+  
+      <p id="output" class="error-message"></p>
+    </div>
+  </section>
+  
+
   
   
   
@@ -749,7 +824,75 @@
     },
    
   });
-
+  function validateForm() {
+      let isValid = true;
+  
+      // Clear previous error messages
+      document.getElementById("nameError").textContent = "";
+      document.getElementById("emailError").textContent = "";
+      document.getElementById("messageError").textContent = "";
+  
+      // Validate Name
+      const name = document.getElementById("name").value.trim();
+      if (name === "" || !/^[a-zA-Z\s]+$/.test(name)) {
+        document.getElementById("nameError").textContent = "Please enter a valid full name.";
+        isValid = false;
+      }
+  
+      // Validate Email
+      const email = document.getElementById("email").value.trim();
+      if (email === "" || !/^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/.test(email)) {
+        document.getElementById("emailError").textContent = "Please enter a valid email address.";
+        isValid = false;
+      }
+  
+      // Validate Message
+      const message = document.getElementById("message").value.trim();
+      if (message === "" || message.length < 10) {
+        document.getElementById("messageError").textContent = "Message must be at least 10 characters long.";
+        isValid = false;
+      }
+  
+      // If valid, show a success message
+      if (isValid) {
+        alert("Your message has been sent successfully!");
+        document.getElementById("contactForm").reset();
+      }
+    }
+  
+    function getLocation() {
+      const output = document.getElementById("output");
+  
+      if ("geolocation" in navigator) {
+        navigator.geolocation.getCurrentPosition(
+          (position) => {
+            const latitude = position.coords.latitude;
+            const longitude = position.coords.longitude;
+            output.textContent = `Latitude: ${latitude}, Longitude: ${longitude}`;
+            const googleMapsUrl = `https://www.google.com/maps?q=${latitude},${longitude}`;
+            window.open(googleMapsUrl, "_blank");
+          },
+          (error) => {
+            switch (error.code) {
+              case error.PERMISSION_DENIED:
+                output.textContent = "User denied the request for Geolocation.";
+                break;
+              case error.POSITION_UNAVAILABLE:
+                output.textContent = "Location information is unavailable.";
+                break;
+              case error.TIMEOUT:
+                output.textContent = "The request to get user location timed out.";
+                break;
+              case error.UNKNOWN_ERROR:
+                output.textContent = "An unknown error occurred.";
+                break;
+            }
+          }
+        );
+      } else {
+        output.textContent = "Geolocation is not supported by your browser.";
+      }
+    }
 
   </script>
   <!-- Swiper JS -->

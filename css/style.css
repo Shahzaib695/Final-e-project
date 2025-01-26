@@ -1065,3 +1065,148 @@ ul li a {
   flex-direction: column;
   align-items: flex-start;
 }
+.t-profile-text strong{
+  color: #122853;
+  font-size: 1.2rem;
+}
+.t-profile-text span{
+  color: #535353;
+  font-size: 0.9rem;
+  letter-spacing: 0.3px;
+}
+.t-rating{
+  font-size: 0.8rem;
+  color: #ffbc02;
+  margin-top: 5px;
+}
+.testimonials-box p{
+  font-size: 0.9rem;
+  color: #122853;
+  line-height: 1.4rem;
+  letter-spacing: 0.3px;
+  margin-top: 30px;
+
+}
+/* Container styles */
+#contact-us {
+  padding: 60px 20px;
+  background-color: #f9f9f9;
+}
+
+#contact-us .text-center {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+#contact-us h1 {
+  font-size: 36px;
+  color: #303030;
+}
+
+#contact-us p {
+  color: #666;
+  line-height: 1.6;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+/* Row layout */
+#contact-us .row {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+/* Left Column: Contact Information */
+#contact-us .col-1 {
+  flex: 1;
+  padding: 20px;
+}
+
+#contact-us .address-line {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+#contact-us .address-line i {
+  font-size: 24px;
+  color: #0056b3;
+  margin-right: 15px;
+}
+
+#contact-us .contact-info-title {
+  font-weight: bold;
+  font-size: 16px;
+  color: #303030;
+}
+
+#contact-us .contact-info div {
+  color: #666;
+}
+
+/* Right Column: Contact Form */
+#contact-us .col-2 {
+  flex: 1;
+  padding: 20px;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#contact-us h2 {
+  font-size: 24px;
+  color: #303030;
+  margin-bottom: 20px;
+}
+
+#contact-us .form-row {
+  margin-bottom: 20px;
+}
+
+#contact-us .form-row label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 500;
+  color: #303030;
+}
+
+#contact-us .form-field {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  outline: none;
+}
+
+#contact-us .form-field:focus {
+  border-color: #0056b3;
+}
+
+#contact-us .send-btn {
+  background: #0056b3;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+#contact-us .send-btn:hover {
+  background: #004494;
+}
+
+/* Error Message */
+#contact-us .error-message {
+  margin-top: 20px;
+  text-align: center;
+  font-size: 16px;
+  color: red;
+}
+/* Error Messages */
+.error-message {
+  color: red;
+  font-size: 14px;
+  margin-top: 5px;
+}
