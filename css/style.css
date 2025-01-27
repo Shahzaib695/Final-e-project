@@ -450,12 +450,19 @@ ul li a {
   max-width: 600px;
 }
 
-.service-box-container {
+/* .service-box-container {
   max-width: 1200px;
   width: 90%;
   margin: 50px auto;
+} */
+.service-box-container {
+  display: grid;
+  max-width: 1200px;
+  width: 90%;
+  height: 400px;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
 }
-
 .service-box {
   display: flex;
   flex-direction: column;
@@ -471,9 +478,14 @@ ul li a {
   transform: translateY(-10px);
 
 } */
-.service-box :hover {
+ .service-box:hover {
   border: 5px solid #c7d0eb !important;
 }
+
+.service-box {
+  transition: border 0.3s ease-in-out;
+}
+
 
 .service-box svg {
   font-size: 2rem;
@@ -523,6 +535,21 @@ ul li a {
 
 .s-box1 svg {
   background-color: #d4e2ff;
+}
+.s-box2{
+  background-color:#D4F2E7;
+}
+.s-box4{
+  background-color: #E8D4FF;
+}
+.s-box4{
+background-color: #FFE6D4;
+}
+.s-box5{
+background-color: #FFD4E5;
+}
+.s-box6{
+background-color: #FFF4D4;
 }
 
 .swiper {
@@ -1106,6 +1133,8 @@ ul li a {
   margin: 50px auto;
   display: flex;
   flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 #subscribe h3{
   font-size: 2.6rem;
@@ -1188,9 +1217,49 @@ footer{
   color: #333333;
   font-size: 0.9rem;
   transition: all ease 0.3s;
+  text-decoration: none !important;
 }
 .footer-social :hover{
   background-color: #122853;
   color: #ffffff;
 }
-
+.footer-link-box{
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.footer-link-box strong{
+  color: #122853;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+.footer-link-box ul{
+  margin-top: 5px;
+  display: contents;
+  list-style-type: none;
+  text-decoration: none;
+}
+.footer-link-box ul li a{
+  color: #585858;
+  font-size: 0.9rem;
+  margin-bottom: 5px;
+  display: flex;
+  align-items: flex-start;
+  text-decoration: none;
+  transition: all ease 0.3s;
+}
+.footer-bottom{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  grid-gap: 10px;
+  border: 1px solid #e9e9e9;
+  padding: 20px 0px;
+  max-width: 1200px;
+  width: 90%;
+  margin: auto;
+  flex-wrap: wrap;
+}
+.footer-bottom span{
+  color: #252525;
+  font-size: 0.9rem;
+}
