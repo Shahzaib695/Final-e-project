@@ -36,7 +36,8 @@ ul li a {
 }
 
 #navigation {
-  display: flex;
+  /* display: flex; */
+  position: sticky !important;
   margin-right: auto;
   flex-wrap: nowrap !important;
   margin: 0px 40px;
@@ -469,6 +470,7 @@ ul li a {
   justify-content: center;
   align-items: flex-start;
   max-width: 100%;
+  height: 320px;
   border: 5px solid #ffffff;
   padding: 30px;
   /* background-color: #f8d4ff; */
@@ -536,20 +538,35 @@ ul li a {
 .s-box1 svg {
   background-color: #d4e2ff;
 }
+.s-box2 svg {
+  background-color: #ecf6fd;
+}
+.s-box3 svg {
+  background-color: #d4e2ff;
+}
+.s-box4 svg {
+  background-color: #ecf6fd;
+}
+.s-box5 svg {
+  background-color: #d4e2ff;
+}
+.s-box6 svg {
+  background-color: #ecf6fd;
+}
 .s-box2{
-  background-color:#D4F2E7;
+  background-color:#d4e2ff;
+}
+.s-box3{
+  background-color: #ecf6fd;
 }
 .s-box4{
-  background-color: #E8D4FF;
-}
-.s-box4{
-background-color: #FFE6D4;
+background-color:#d4e2ff;
 }
 .s-box5{
-background-color: #FFD4E5;
+background-color:#ecf6fd;
 }
 .s-box6{
-background-color: #FFF4D4;
+background-color:#d4e2ff;
 }
 
 .swiper {
@@ -611,7 +628,18 @@ background-color: #FFF4D4;
   display: grid;
   grid-template-columns: 1.5fr 1fr;
 }
-
+/* .why-choose-us-left button {
+  
+  border: none;
+  border-radius: 8px;
+  padding: 10px 20px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+} */
+.why-choose-us-left button:hover {
+  background-color: #25503F; /* Slightly darker green on hover */
+}
 .why-choose-us-left {
   padding: 50px;
   background-color: #3c8167;
@@ -674,7 +702,7 @@ background-color: #FFF4D4;
 }
 
 .why-choose-us-btn {
-  background-color: #1a1a1b;
+  background-color: #30725A; /* Deep Green */
   color: #ffffff;
   padding: 0px 10px;
   display: flex;
