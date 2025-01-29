@@ -95,11 +95,7 @@ ul li a {
 .hero-img {
   max-width: 100%;
   height: auto;
-  /* Maintain aspect ratio */
-}
-
-/* Optional: Adjust the container or image wrapper to better control the image behavior */
-.hero-content {
+}.hero-content {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 20px;
@@ -172,92 +168,6 @@ ul li a {
   align-items: center;
   margin-top: 20px;
 }
-
-
-/* Adjust for screens with max-width 991px */
-@media (max-width: 991px) {
-  .hero-content {
-    display: flex;
-    flex-direction: column;
-    /* Stack content vertically */
-  }
-
-  .hero-img {
-    order: 2;
-    /* Move the image below the text */
-    margin-top: 30px;
-    /* Add some space above the image */
-    height: auto;
-    /* Keep the image height auto on smaller screens */
-    min-height: 550px;
-    /* Set a minimum height for the image */
-    max-height: 80vh;
-    /* Allow the image to grow but limit it to 70% of the viewport height */
-  }
-
-  .hero-text {
-    text-align: center;
-    /* Center the text on small screens */
-  }
-}
-
-/* Adjust for screens with max-width 768px */
-@media (max-width: 768px) {
-  .hero-content {
-    display: flex;
-    flex-direction: column;
-    /* Stack content vertically */
-    gap: 15px;
-    /* Add spacing between elements */
-  }
-
-  .hero-img {
-    order: 2;
-    /* Move the image below the text */
-    margin-top: 20px;
-    /* Reduce space above the image */
-    min-height: 550px;
-    /* Ensure the image maintains a reasonable height */
-    max-height: 80vh;
-    /* Limit the image to 60% of the viewport height */
-  }
-
-  .hero-text {
-    text-align: center;
-    /* Center the text */
-  }
-
-  .hero-text h1 {
-    font-size: 1.8rem;
-    /* Smaller font size for the heading */
-  }
-
-  .hero-text p {
-    font-size: 1rem;
-    /* Adjust paragraph font size */
-    padding: 0 20px;
-    /* Add some padding on smaller screens */
-  }
-
-  .hero-text-btns {
-    flex-direction: row;
-    /* Keep buttons in a row */
-    justify-content: center;
-    /* Center buttons */
-  }
-
-  .hero-text-btns a {
-    width: 190px;
-    /* Keep the width of buttons fixed */
-    height: 45px;
-    /* Keep the height of buttons fixed */
-    margin-bottom: 10px;
-    /* Add space between buttons */
-  }
-
-
-}
-
 /* button */
 .button {
   position: relative;
@@ -342,6 +252,9 @@ ul li a {
   box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.12);
   display: grid;
   grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 40px;
+  padding: 40px;
 }
 
 .our-story-img {
@@ -352,12 +265,13 @@ ul li a {
 .our-story-img img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: contain;
   object-position: center;
+  border-radius: 10px;
 }
 
 .our-story-text {
-  padding: 50px;
+  padding: 20px;
 }
 
 .our-story-text h2 {
@@ -367,16 +281,16 @@ ul li a {
 }
 
 .our-story-text p {
-  font-size: 0.9rem;
+  font-size: 1.3rem;
   color: #535353;
   margin: 10px 0px;
-  line-height: 1.4rem;
+  line-height: 1.6rem;
 }
 
 .story-number-container {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-gap: 20px;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
   margin-top: 20px;
 }
 
@@ -387,7 +301,7 @@ ul li a {
   justify-content: center;
   align-items: center;
   border-radius: 10px;
-  /* background-color: #d4e7ff; */
+  text-align: center;
 }
 
 .story-number-box strong {
@@ -401,6 +315,7 @@ ul li a {
   font-size: 0.9rem;
 }
 
+/* Background colors for number boxes */
 .s-n-box1 {
   background-color: #d4dfff !important;
 }
@@ -416,6 +331,48 @@ ul li a {
 .s-n-box4 {
   background-color: #d7d4ff !important;
 }
+
+/* RESPONSIVE DESIGN */
+
+/* For tablets (max-width: 992px) */
+@media (max-width: 992px) {
+  #about-us {
+    grid-template-columns: 1fr;
+    text-align: center;
+    gap: 30px;
+  }
+
+  .our-story-text {
+    padding: 30px;
+  }
+
+  .story-number-container {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+  }
+}
+
+/* For mobile devices (max-width: 768px) */
+@media (max-width: 768px) {
+  .story-number-container {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+
+  .our-story-text h2 {
+    font-size: 2.2rem;
+  }
+
+  .our-story-text p {
+    font-size: 1.3rem;
+    line-height: 1.4rem;
+  }
+
+  .story-number-box strong {
+    font-size: 1.5rem;
+  }
+}
+
 
 #our-services {
   width: 100%;
@@ -627,26 +584,16 @@ background-color:#d4e2ff;
   width: 100%;
   display: grid;
   grid-template-columns: 1.5fr 1fr;
+  /* overflow-x: hidden; */
 }
-/* .why-choose-us-left button {
-  
-  border: none;
-  border-radius: 8px;
-  padding: 10px 20px;
-  font-weight: 600;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-} */
-.why-choose-us-left button:hover {
-  background-color: #25503F; /* Slightly darker green on hover */
-}
+
 .why-choose-us-left {
   padding: 50px;
   background-color: #3c8167;
 }
 
 .why-choose-us-right {
-  padding: 50px;
+  padding: 30px;
   background-color: #4c71d0;
 }
 
@@ -661,6 +608,7 @@ background-color:#d4e2ff;
 .why-choose-box-container {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  gap: 20px;
   margin-top: 20px;
 }
 
@@ -673,10 +621,11 @@ background-color:#d4e2ff;
 }
 
 .why-choose-box i {
-  width: 35px;
+  min-width: 35px;
   height: 35px;
   border-radius: 50%;
   display: flex;
+  margin-top: -20px;
   justify-content: center;
   align-items: center;
   background-color: #25503f;
@@ -686,8 +635,15 @@ background-color:#d4e2ff;
 
 .why-choose-box-text {
   display: flex;
+  text-align: center;
   flex-direction: column;
   justify-content: center;
+}
+.why-choose-box:hover {
+  background-color: #3d7a5c; /* Slightly lighter shade on hover */
+  transform: scale(1.05); /* Slight scaling for emphasis */
+  cursor: pointer;
+  transition: all 0.3s ease-in-out; /* Smooth transition */
 }
 
 .why-choose-box-text strong {
@@ -723,6 +679,7 @@ background-color:#d4e2ff;
   line-height: 1.4rem;
   letter-spacing: 0.5px;
   margin: 10px;
+  font-weight: 500;
 }
 
 .w-right-contact-container {
@@ -730,13 +687,16 @@ background-color:#d4e2ff;
   display: flex;
   flex-direction: column;
 }
-.w-right-contact-box{
+
+.w-right-contact-box {
   display: flex;
   justify-content: flex-start;
   align-items: center;
   margin-top: 10px;
+  
 }
-.w-right-contact-box i{
+
+.w-right-contact-box i {
   width: 50px;
   height: 50px;
   border-radius: 4px;
@@ -747,24 +707,111 @@ background-color:#d4e2ff;
   font-size: 1.2rem;
   background-color: #4060b3;
 }
-.w-right-contact-box-text{
+
+.w-right-contact-box-text {
   display: flex;
-  flex-direction: column;
+  flex-direction: column;margin-left: 7px;
 }
-.w-right-contact-box-text span{
+
+.w-right-contact-box-text span {
   color: #e4e4e4;
   font-size: 0.7rem;
 }
-.w-right-contact-box-text strong{
+
+.w-right-contact-box-text strong {
   font-size: 1rem;
   color: #ffffff;
   font-weight: 600;
 }
+
+/* Media Queries for responsiveness */
+@media (max-width: 814px) {
+  #why-choose-us {
+    grid-template-columns: 1fr; /* Stack columns on small screens */
+    padding: 20px;
+  }
+
+  .why-choose-us-left,
+  .why-choose-us-right {
+    padding: 20px;
+  }
+
+  .why-choose-us-left h3,
+  .why-choose-us-right h3 {
+    font-size: 2rem;
+    line-height: 2.5rem;
+  }
+
+  .why-choose-box-container {
+    grid-template-columns: 1fr; /* Stack boxes vertically */
+  }
+
+  .why-choose-box {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 15px;
+  }
+
+  .why-choose-box i {
+    margin-bottom: 10px;
+  }
+
+  .why-choose-us-btn {
+    max-width: 100%;
+  }
+
+  .why-choose-us-right p {
+    font-size: 0.9rem;
+  }
+
+  .w-right-contact-container {
+    flex-direction: column;
+  }
+
+  .w-right-contact-box {
+    margin-top: 15px;
+  }
+
+  .w-right-contact-box i {
+    font-size: 1.5rem;
+  }
+
+  .w-right-contact-box-text span {
+    font-size: 0.8rem;
+  }
+
+  .w-right-contact-box-text strong {
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .why-choose-us-left h3,
+  .why-choose-us-right h3 {
+    font-size: 1.7rem;
+    line-height: 2.2rem;
+  }
+
+  .why-choose-box-text strong {
+    font-size: 1rem;
+  }
+
+  .why-choose-box-text p {
+    font-size: 0.8rem;
+  }
+
+  .w-right-contact-box i {
+    width: 40px;
+    height: 40px;
+    font-size: 1rem;
+  }
+}
+
 #team{
   max-width: 1200px;
   width: 90%;
-  /* background:#F8F6F0; */
-  margin: 80px auto;
+  background:#F8F6F0;
+  margin: 80px;
 }
 .team-heading{
   display: flex;
@@ -1290,4 +1337,9 @@ footer{
 .footer-bottom span{
   color: #252525;
   font-size: 0.9rem;
+}
+@media (max-width:950px){
+  #abput-us{
+   grid-template-columns: 1fr; 
+  }
 }
