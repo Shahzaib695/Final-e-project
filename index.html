@@ -38,6 +38,32 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
   <link rel="stylesheet" href="css/style.css">
+
+    <!-- Structured Data (Schema Markup) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "MedicalClinic",
+      "name": "Zara Therapy Clinic",
+      "url": "https://www.zaratherapyclinic.com",
+      "logo": "https://www.zaratherapyclinic.com/images/logo.png",
+      "description": "Expert physiotherapy and rehabilitation clinic helping patients with pain relief, injury recovery, and wellness.",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "1002 West 5th Ave",
+        "addressLocality": "Alaska",
+        "addressRegion": "NY",
+        "postalCode": "55060",
+        "addressCountry": "US"
+      },
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "telephone": "+1-300-0099878",
+        "contactType": "customer service"
+      }
+    }
+    </script>
+  
 </head>
 <body>
   <section id="hero">
@@ -87,8 +113,8 @@
       <div class="row align-items-center">
         <div class="col-md-6 text-center text-md-start">
           <div class="hero-text">
-            <h1>Feel Better About Finding the Care You Deserve</h1>
-            <p>At Zara Therapy Clinic, we provide expert care and personalized therapy to help you regain strength, mobility, and confidence in your daily life.</p>
+            <h1>Expert Physiotherapy & Rehab for a Pain-Free Life</h1>
+            <p>We help you recover faster with advanced therapy techniques and personalized care.</p>
 
             <div class="hero-text-btns">
               <button class="button">
@@ -123,8 +149,8 @@
       <img src="images/story_img.jpg" alt="About Us Image">
     </div>
     <div class="our-story-text">
-      <h2>About Us</h2>
-      <p>With over 10 years of experience, Zara Therapy Clinic specializes in personalized physiotherapy solutions. Our mission is to improve lives through advanced treatments and compassionate care.</p>
+      <h2>About Zara Therapy Clinic - 10+ Years of Excellence</h2>
+    <p>With a team of expert therapists, we have helped over <strong>100,000+ patients</strong> recover and lead healthier lives.</p>
       <!-- happy client numbers -->
       <div class="story-number-container">
         <div class="story-number-box s-n-box1">
@@ -153,8 +179,7 @@
     <div class="service-heading">
       <!-- text -->
       <div class="service-heading-text">
-        <h2><strong>Our Services</strong></h2>
-        <h2>High Quality Services For You.</h2>
+        <h2><strong>Our Physiotherapy & Rehab Services</strong></h2>
       </div>
       <!-- btns -->
       <div class="service-slide-btns">
@@ -183,7 +208,7 @@
                   d="M18.4169 28.9803C17.8143 28.8675 17.25 29.3248 17.25 29.9379C17.25 30.4722 16.8168 30.9054 16.2825 30.9054H16C15.4477 30.9054 15 31.3531 15 31.9054V32.7794C15 33.3316 15.4477 33.7794 16 33.7794H16.25C16.8023 33.7794 17.25 34.2271 17.25 34.7794V35.1574C17.25 35.6147 17.5617 36.0153 18.0064 36.122C22.6766 37.2432 25.5388 37.2443 30.0044 36.1275C30.444 36.0176 30.75 35.6195 30.75 35.1663V34.7794C30.75 34.2271 31.1977 33.7794 31.75 33.7794H32C32.5523 33.7794 33 33.3316 33 32.7794V31.9054C33 31.3531 32.5523 30.9054 32 30.9054H31.7162C31.1826 30.9054 30.75 30.4729 30.75 29.9393C30.75 29.326 30.1848 28.8692 29.5822 28.9829C25.39 29.7738 22.6084 29.7644 18.4169 28.9803ZM20.5 31.7377C20.5 31.1854 20.0523 30.7377 19.5 30.7377C18.9477 30.7377 18.5 31.1854 18.5 31.7377V33.9779C18.5 34.5302 18.9477 34.9779 19.5 34.9779C20.0523 34.9779 20.5 34.5302 20.5 33.9779V31.7377Z"
                   fill="currentColor" />
               </svg>
-              <strong>Orthopedic Therapy</strong>
+            <h3><strong>Orthopedic Therapy</strong><h3>
               <!-- details -->
               <p> Targets conditions like joint pain, arthritis, and musculoskeletal injuries.</p>
               <a href="#">Read More</a>
@@ -216,7 +241,7 @@
                     d="M34.2238 33.7761C34.0201 34.1251 33.5831 34.2363 33.2475 34.0245L27.9044 30.6517L30.5458 28.6464L27.2394 26.1989C26.9196 25.9621 26.8449 25.5006 27.0725 25.1681C27.3001 24.8355 27.7438 24.7577 28.0636 24.9944L32.9766 28.6313L30.4644 30.5384L33.985 32.7607C34.3205 32.9725 34.4274 33.4272 34.2238 33.7761Z"
                     fill="currentColor" />
             </svg>
-              <strong>Pain Management Therapy</strong>
+              <h3><strong>Pain Management Therapy</strong></h3>
               <!-- details -->
               <p>Focus on alleviating chronic pain and improving the patient's overall quality of life.</p>
               <a href="#">Read More</a>
@@ -234,7 +259,7 @@
                     d="M11.8076 16.9446C13.0827 15.206 15.2273 15 16.5706 15H26.5706C30.3053 15 32.7945 16.6015 34.3319 18.6194C35.5387 20.2033 36.0883 21.9895 36.3313 22.7792L36.3374 22.7988C36.3725 22.9129 36.3971 22.9927 36.4166 23.0513C36.8282 24.2859 36.3924 25.5988 35.4249 26.3593C36.3629 26.8665 37 27.8588 37 29V43C37 43.5523 36.5523 44 36 44C35.4477 44 35 43.5523 35 43V29C35 28.4477 34.5523 28 34 28C33.4477 28 33 28.4477 33 29V29.6667C33 30.219 32.5523 30.6667 32 30.6667C31.4477 30.6667 31 30.219 31 29.6667V29C31 28.0426 31.4485 27.1899 32.1468 26.6406C31.4981 26.291 30.976 25.703 30.7245 24.9487C30.679 24.8121 30.6347 24.673 30.5916 24.5377L30.6052 24.5715L30.5806 24.503C30.3172 23.6742 30.0722 22.9288 29.5593 22.2556C29.3235 21.9461 29.0199 21.641 28.5706 21.409L28.5706 41.1507C28.5706 42.7505 27.3152 44.0688 25.7173 44.1471C24.1194 44.2253 22.7413 43.0359 22.585 41.4438L21.8542 34H21.287L20.5562 41.4438C20.3999 43.0359 19.0218 44.2253 17.4239 44.1471C15.826 44.0688 14.5706 42.7505 14.5706 41.1507L14.5706 26.6011C14.3315 26.2933 14.1014 25.9915 13.882 25.6964C12.9471 24.4392 12.083 23.1447 11.5631 21.9318C11.1288 20.9184 10.4391 18.8107 11.8076 16.9446ZM16.5706 17C15.2864 17 14.0737 17.2366 13.4204 18.1274C12.7382 19.0576 13.0027 20.2136 13.4014 21.1439C13.8248 22.1318 14.5714 23.2718 15.4869 24.503C15.7585 24.8682 16.0494 25.2473 16.3572 25.6393L16.4055 25.7009L18.1014 23.9242C17.5358 23.1526 16.964 22.4017 16.3158 21.6561C15.9535 21.2392 15.9976 20.6076 16.4145 20.2453C16.8313 19.883 17.4629 19.9271 17.8252 20.3439C18.4402 21.0514 18.9867 21.7579 19.5035 22.4553L24.7108 17H16.5706ZM27.4164 17.0339C27.3815 17.089 27.3407 17.1415 27.2939 17.1905L20.6998 24.0986C21.1892 24.7708 21.6821 25.4333 22.2278 26.1003C23.277 27.3826 23.088 29.2727 21.8057 30.3218C20.5233 31.371 18.6333 31.182 17.5841 29.8997C17.2637 29.5082 16.9241 29.1166 16.5706 28.7165L16.5706 41.1507C16.5706 41.684 16.9891 42.1234 17.5217 42.1495C18.0543 42.1756 18.5137 41.7791 18.5658 41.2484L19.4737 32H23.6675L24.5754 41.2484C24.6275 41.7791 25.0869 42.1756 25.6195 42.1495C26.1521 42.1234 26.5706 41.684 26.5706 41.1507L26.5706 18.9113L27.716 19.0797C29.4578 19.3358 30.4863 20.1723 31.1502 21.0435C31.8878 22.0117 32.2201 23.0581 32.4729 23.854L32.4867 23.8972C32.5339 24.0459 32.5777 24.1836 32.6219 24.3162C32.7966 24.8402 33.3629 25.1233 33.8868 24.9487C34.4108 24.774 34.6939 24.2077 34.5193 23.6838C34.4915 23.6003 34.4601 23.4983 34.4284 23.3954L34.4258 23.3871C34.1867 22.6103 33.7213 21.118 32.741 19.8315C31.6736 18.4305 30.0052 17.2462 27.4164 17.0339ZM19.2968 25.5685L17.8222 27.1133C18.2689 27.6159 18.7155 28.1242 19.132 28.6332C19.4817 29.0607 20.1117 29.1237 20.5392 28.7739C20.9666 28.4242 21.0296 27.7942 20.6799 27.3667C20.1846 26.7614 19.7304 26.1594 19.2968 25.5685Z"
                     fill="currentColor" />
             </svg>
-              <strong>Sports Injury Therapy</strong>
+              <h3><strong>Sports Injury Therapy</strong></h3>
               <!-- details -->
               <p> Rehabilitation for athletes, targeting injury recovery and functional restoration.</p>
               <a href="#">Read More</a>
@@ -256,7 +281,7 @@
                     d="M39 6H9C7.34315 6 6 7.34315 6 9V39C6 40.6569 7.34315 42 9 42H39C40.6569 42 42 40.6569 42 39V9C42 7.34315 40.6569 6 39 6ZM8 9C8 8.44772 8.44772 8 9 8H39C39.5523 8 40 8.44772 40 9V39C40 39.5523 39.5523 40 39 40H9C8.44772 40 8 39.5523 8 39V9Z"
                     fill="currentColor" />
             </svg>
-              <strong>Occupational Therapy:</strong>
+              <h3><strong>Occupational Therapy</strong></h3>
               <!-- details -->
               <p>Aims to help patients regain independence in daily tasks and professional activities.</p>
               <a href="#">Read More</a>
@@ -274,7 +299,7 @@
                     d="M31.4765 13.7461C31.4765 15.815 29.7994 17.4922 27.7304 17.4922C25.6615 17.4922 23.9844 15.815 23.9844 13.7461C23.9844 11.6772 25.6615 10 27.7304 10C29.7994 10 31.4765 11.6772 31.4765 13.7461ZM14 30H19.828L24.222 34.3356L26.2879 39.0997C26.7274 40.1131 27.9052 40.5783 28.9185 40.1389C29.9319 39.6994 30.3972 38.5216 29.9577 37.5083L27.7375 32.3885C27.6357 32.1536 27.4896 31.9405 27.3074 31.7606L25.523 30H34C35.1046 30 36 30.8954 36 32V40H38V32C38 29.7909 36.2091 28 34 28H30.8725C31.7344 27.794 32.3842 27.0286 32.4056 26.1009C32.4312 24.9967 31.5568 24.0807 30.4525 24.0551C28.6983 24.0145 28.1719 23.7225 27.7954 23.3836C27.5416 23.1551 27.2589 22.8076 26.8671 22.2061C26.5854 21.7736 26.2951 21.2871 25.9387 20.69L25.9385 20.6896L25.9383 20.6893C25.7874 20.4364 25.6246 20.1637 25.4457 19.8668L25.4032 19.7962C25.2794 19.59 25.1186 19.3222 24.9572 19.1048C24.7624 18.8423 24.4007 18.4146 23.7948 18.1625C23.186 17.9091 22.6214 17.9531 22.2724 18.0079C21.9411 18.0599 21.5836 18.1618 21.2917 18.2456L21.2917 18.2456C20.4238 18.4948 19.701 19.154 19.2274 19.669C18.6829 20.2611 18.1547 21.0107 17.7273 21.8378C16.922 23.3961 16.2217 25.7508 17.214 27.9481C17.2219 27.9656 17.23 27.9829 17.2383 28H14C11.7909 28 10 29.7909 10 32V40H12V32C12 30.8954 12.8954 30 14 30ZM29.3301 28H23.4961L22.5404 27.0569L24.0533 25.1658C24.3712 25.5922 24.7195 25.9967 25.1195 26.3567C26.2938 27.4136 27.6485 27.8544 29.3301 28ZM16.8723 30.0868L20.1482 33.2289L19.3193 36.0258C19.2687 36.1969 19.1953 36.3604 19.1013 36.5119L17.3354 39.3582C16.753 40.2968 15.5201 40.5856 14.5815 40.0033C13.6429 39.421 13.3541 38.188 13.9364 37.2494L15.5606 34.6316L16.6637 30.9091L16.8723 30.0868Z"
                     fill="currentColor" />
             </svg>
-              <strong>Physical Therapy</strong>
+          <h3><strong>Physical Therapy</strong></h3>
               <!-- details -->
               <p>Restoring movement, improving circulation, and relieving pain for a stronger, healthier you.
               </p>
@@ -294,7 +319,7 @@
                     d="M11.8076 16.9446C13.0827 15.206 15.2273 15 16.5706 15H26.5706C30.3053 15 32.7945 16.6015 34.3319 18.6194C35.5387 20.2033 36.0883 21.9895 36.3313 22.7792L36.3374 22.7988C36.3725 22.9129 36.3971 22.9927 36.4166 23.0513C36.8282 24.2859 36.3924 25.5988 35.4249 26.3593C36.3629 26.8665 37 27.8588 37 29V43C37 43.5523 36.5523 44 36 44C35.4477 44 35 43.5523 35 43V29C35 28.4477 34.5523 28 34 28C33.4477 28 33 28.4477 33 29V29.6667C33 30.219 32.5523 30.6667 32 30.6667C31.4477 30.6667 31 30.219 31 29.6667V29C31 28.0426 31.4485 27.1899 32.1468 26.6406C31.4981 26.291 30.976 25.703 30.7245 24.9487C30.679 24.8121 30.6347 24.673 30.5916 24.5377L30.6052 24.5715L30.5806 24.503C30.3172 23.6742 30.0722 22.9288 29.5593 22.2556C29.3235 21.9461 29.0199 21.641 28.5706 21.409L28.5706 41.1507C28.5706 42.7505 27.3152 44.0688 25.7173 44.1471C24.1194 44.2253 22.7413 43.0359 22.585 41.4438L21.8542 34H21.287L20.5562 41.4438C20.3999 43.0359 19.0218 44.2253 17.4239 44.1471C15.826 44.0688 14.5706 42.7505 14.5706 41.1507L14.5706 26.6011C14.3315 26.2933 14.1014 25.9915 13.882 25.6964C12.9471 24.4392 12.083 23.1447 11.5631 21.9318C11.1288 20.9184 10.4391 18.8107 11.8076 16.9446ZM16.5706 17C15.2864 17 14.0737 17.2366 13.4204 18.1274C12.7382 19.0576 13.0027 20.2136 13.4014 21.1439C13.8248 22.1318 14.5714 23.2718 15.4869 24.503C15.7585 24.8682 16.0494 25.2473 16.3572 25.6393L16.4055 25.7009L18.1014 23.9242C17.5358 23.1526 16.964 22.4017 16.3158 21.6561C15.9535 21.2392 15.9976 20.6076 16.4145 20.2453C16.8313 19.883 17.4629 19.9271 17.8252 20.3439C18.4402 21.0514 18.9867 21.7579 19.5035 22.4553L24.7108 17H16.5706ZM27.4164 17.0339C27.3815 17.089 27.3407 17.1415 27.2939 17.1905L20.6998 24.0986C21.1892 24.7708 21.6821 25.4333 22.2278 26.1003C23.277 27.3826 23.088 29.2727 21.8057 30.3218C20.5233 31.371 18.6333 31.182 17.5841 29.8997C17.2637 29.5082 16.9241 29.1166 16.5706 28.7165L16.5706 41.1507C16.5706 41.684 16.9891 42.1234 17.5217 42.1495C18.0543 42.1756 18.5137 41.7791 18.5658 41.2484L19.4737 32H23.6675L24.5754 41.2484C24.6275 41.7791 25.0869 42.1756 25.6195 42.1495C26.1521 42.1234 26.5706 41.684 26.5706 41.1507L26.5706 18.9113L27.716 19.0797C29.4578 19.3358 30.4863 20.1723 31.1502 21.0435C31.8878 22.0117 32.2201 23.0581 32.4729 23.854L32.4867 23.8972C32.5339 24.0459 32.5777 24.1836 32.6219 24.3162C32.7966 24.8402 33.3629 25.1233 33.8868 24.9487C34.4108 24.774 34.6939 24.2077 34.5193 23.6838C34.4915 23.6003 34.4601 23.4983 34.4284 23.3954L34.4258 23.3871C34.1867 22.6103 33.7213 21.118 32.741 19.8315C31.6736 18.4305 30.0052 17.2462 27.4164 17.0339ZM19.2968 25.5685L17.8222 27.1133C18.2689 27.6159 18.7155 28.1242 19.132 28.6332C19.4817 29.0607 20.1117 29.1237 20.5392 28.7739C20.9666 28.4242 21.0296 27.7942 20.6799 27.3667C20.1846 26.7614 19.7304 26.1594 19.2968 25.5685Z"
                     fill="currentColor" />
             </svg>
-              <strong>Neurological Therapy</strong>
+              <h3><strong>Neurological Therapy</strong></h3>
               <!-- details -->
               <p>Restoring function and enhancing quality of life through expert neurological therapy.</p>
               <a href="#">Read More</a>
@@ -452,7 +477,7 @@
           <div class="product">
             <img src="product images/istockphoto-1184723788-612x612.jpg">
             <div class="product-details">
-              <h3/h3>Product 1</h3>
+              <h3>Product 1</h3>
               <p>Lorem ipsum dolor sit amet consectetur.</p>
               <span>$25</span>
             </div>
@@ -595,41 +620,50 @@
               <div>55060.</div>
             </div>
           </div>
+  
           <div class="address-line">
             <i class="fa-solid fa-phone"></i>
             <div class="contact-info">
               <div class="contact-info-title">Phone</div>
-              <div>0300-0099878</div>
+              <div><a href="tel:+13000099878">0300-0099878</a></div>
             </div>
           </div>
+  
           <div class="address-line">
             <i class="fa-regular fa-envelope"></i>
             <div class="contact-info">
               <div class="contact-info-title">Email</div>
-              <div>zaratherapy@gmail.com</div>
+              <div><a href="mailto:zaratherapy@gmail.com">zaratherapy@gmail.com</a></div>
             </div>
           </div>
+  
+          <!-- Google Map -->
+          
         </div>
   
         <!-- Contact Form -->
         <div class="col-2">
           <form id="contactForm">
             <h2>Send Message</h2>
+  
             <div class="form-row">
               <label for="name">Full Name</label>
               <input type="text" id="name" class="form-field" placeholder="Enter your full name">
               <span class="error-message" id="nameError"></span>
             </div>
+  
             <div class="form-row">
               <label for="email">Email</label>
               <input type="email" id="email" class="form-field" placeholder="Enter your email">
               <span class="error-message" id="emailError"></span>
             </div>
+  
             <div class="form-row">
               <label for="message">Type your message...</label>
               <textarea id="message" class="form-field" placeholder="Write your message" rows="3"></textarea>
               <span class="error-message" id="messageError"></span>
             </div>
+  
             <input type="button" class="send-btn" value="Send" onclick="validateForm()">
           </form>
         </div>
@@ -637,6 +671,7 @@
       <p id="output" class="error-message"></p>
     </div>
   </section>
+  
   <section id="subscribe">
     <h3>Subscribe for new updates from Zara Therapy Clinic</h3>
     <form action="" class="subscribe-box">
@@ -688,7 +723,7 @@
     </div>
     <div class="footer-bottom">
       <span>Made By Us</span>
-      <span>Copyright 2025 - Zara Therapy Clinic</span>
+      <p><span>&copy; 2025 Zara Therapy Clinic. All rights reserved.</span></p>
     </div>
   </footer>
   <!-- Include Swiper CSS -->
