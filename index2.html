@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Zara Therapy Clinic offers expert physiotherapy, pain management, and rehabilitation services. Book an appointment today for personalized care.">
+  <meta name="keywords" content="physiotherapy, pain management, sports injury therapy, orthopedic therapy, occupational therapy, Zara Therapy Clinic">
+  <meta name="author" content="Zara Therapy Clinic">
+  <link rel="canonical" href="https://www.zaratherapyclinic.com" />
+  <title>Zara Therapy Clinic | Expert Physiotherapy & Rehabilitation Services</title>
+  <!-- Add your CSS and JS links here -->
+</head>
+<body>
+  <!-- Header Section -->
+  <header>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container">
+        <a class="navbar-brand" href="#"><span>Zara</span>Therapy Clinic</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <i class="fas fa-bars text-black"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav align-items-center justify-content-center">
+            <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="#about-us">About Us</a></li>
+            <li class="nav-item"><a class="nav-link" href="#our-services">Services</a></li>
+            <li class="nav-item"><a class="nav-link" href="#products">Products</a></li>
+            <li class="nav-item"><a class="nav-link" href="#contact-us">Contact Us</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="hero">
+    <div class="container-lg">
+      <div class="row align-items-center">
+        <div class="col-md-6 text-center text-md-start">
+          <h1>Feel Better About Finding the Care You Deserve</h1>
+          <p>At Zara Therapy Clinic, we provide expert care and personalized therapy to help you regain strength, mobility, and confidence in your daily life.</p>
+          <div class="hero-text-btns">
+            <button class="button"><i class="fa-solid fa-magnifying-glass"></i> Find A Doctor</button>
+            <button class="button"><i class="fa-solid fa-check"></i> Book An Appointment</button>
+          </div>
+        </div>
+        <div class="col-md-6 d-flex justify-content-center">
+          <img src="images/main-bg.png" class="img-fluid rounded" alt="Therapy Session at Zara Therapy Clinic">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Us Section -->
+  <section id="about-us">
+    <div class="our-story-img">
+      <img src="images/story_img.jpg" alt="About Zara Therapy Clinic">
+    </div>
+    <div class="our-story-text">
+      <h2>About Us</h2>
+      <p>With over 10 years of experience, Zara Therapy Clinic specializes in personalized physiotherapy solutions. Our mission is to improve lives through advanced treatments and compassionate care.</p>
+      <div class="story-number-container">
+        <div class="story-number-box"><strong>100000+</strong><span>Happy Patients</span></div>
+        <div class="story-number-box"><strong>215+</strong><span>Expert Therapists</span></div>
+        <div class="story-number-box"><strong>1000+</strong><span>High Tech Machines</span></div>
+        <div class="story-number-box"><strong>100+</strong><span>International Awards</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section id="our-services">
+    <h2>Our Services</h2>
+    <p>High-quality services tailored to your needs.</p>
+    <div class="service-box-container">
+      <!-- Add service boxes here -->
+    </div>
+  </section>
+
+  <!-- Products Section -->
+  <section id="products">
+    <h2>Our Products</h2>
+    <p>Explore our exclusive range of therapy products.</p>
+    <div class="swiper productSwiper">
+      <!-- Add product slides here -->
+    </div>
+  </section>
+
+  <!-- Testimonials Section -->
+  <section id="testimonials">
+    <h2>Patient Feedback</h2>
+    <p>What our patients say about us.</p>
+    <div class="testimonials-content">
+      <!-- Add testimonials here -->
+    </div>
+  </section>
+
+  <!-- Contact Us Section -->
+  <section id="contact-us">
+    <h2>Contact Us</h2>
+    <p>Reach out to us for expert therapy services and professional advice.</p>
+    <div class="row">
+      <div class="col-1">
+        <div class="address-line">
+          <i class="fa-solid fa-location-dot"></i>
+          <div class="contact-info">
+            <div class="contact-info-title">Address</div>
+            <div>1002 West 5th Ave, Alaska, New York, 55060.</div>
+          </div>
+        </div>
+        <div class="address-line">
+          <i class="fa-solid fa-phone"></i>
+          <div class="contact-info">
+            <div class="contact-info-title">Phone</div>
+            <div>0300-0099878</div>
+          </div>
+        </div>
+        <div class="address-line">
+          <i class="fa-regular fa-envelope"></i>
+          <div class="contact-info">
+            <div class="contact-info-title">Email</div>
+            <div>zaratherapy@gmail.com</div>
+          </div>
+        </div>
+      </div>
+      <div class="col-2">
+        <form id="contactForm">
+          <h3>Send Message</h3>
+          <div class="form-row">
+            <label for="name">Full Name</label>
+            <input type="text" id="name" class="form-field" placeholder="Enter your full name">
+          </div>
+          <div class="form-row">
+            <label for="email">Email</label>
+            <input type="email" id="email" class="form-field" placeholder="Enter your email">
+          </div>
+          <div class="form-row">
+            <label for="message">Type your message...</label>
+            <textarea id="message" class="form-field" placeholder="Write your message" rows="3"></textarea>
+          </div>
+          <input type="button" class="send-btn" value="Send" onclick="validateForm()">
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer Section -->
+  <footer>
+    <div class="footer-container">
+      <div class="footer-company-box">
+        <a href="" class="navbar-brand"><span>Zara</span>Therapy Clinic</a>
+        <p>Zara Therapy Clinic is committed to providing top-quality rehabilitation and therapy services to help you live pain-free.</p>
+        <div class="footer-social">
+          <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+          <a href=""><i class="fa-brands fa-instagram"></i></a>
+          <a href=""><i class="fa-brands fa-youtube"></i></a>
+          <a href=""><i class="fa-brands fa-twitter"></i></a>
+        </div>
+      </div>
+      <div class="footer-link-box">
+        <strong>Main Links</strong>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="#about-us">About</a></li>
+          <li><a href="#our-services">Services</a></li>
+          <li><a href="#products">Products</a></li>
+          <li><a href="#contact-us">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-link-box">
+        <strong>Quick Links</strong>
+        <ul>
+          <li><a href="">FAQs</a></li>
+          <li><a href="">Terms of Service</a></li>
+          <li><a href="">Privacy Policy</a></li>
+          <li><a href="">Site Map</a></li>
+        </ul>
+      </div>
+      <div class="footer-link-box">
+        <strong>Resources</strong>
+        <ul>
+          <li><a href="">Appointments</a></li>
+          <li><a href="">Meet Our Team</a></li>
+          <li><a href="">Blog</a></li>
+          <li><a href="">Testimonials</a></li>
+          <li><a href="">Careers</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>Made By Us</span>
+      <span>Copyright 2025 - Zara Therapy Clinic</span>
+    </div>
+  </footer>
+
+  <!-- Schema Markup for SEO -->
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "MedicalClinic",
+      "name": "Zara Therapy Clinic",
+      "description": "Zara Therapy Clinic offers expert physiotherapy, pain management, and rehabilitation services.",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "1002 West 5th Ave",
+        "addressLocality": "Alaska",
+        "addressRegion": "New York",
+        "postalCode": "55060"
+      },
+      "telephone": "0300-0099878",
+      "email": "zaratherapy@gmail.com",
+      "image": "https://www.zaratherapyclinic.com/images/main-bg.png",
+      "url": "https://www.zaratherapyclinic.com"
+    }
+  </script>
+</body>
+</html>
