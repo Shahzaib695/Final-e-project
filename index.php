@@ -69,6 +69,9 @@
   
 </head>
 <body>
+  <?php
+  include("db.php");
+  ?>
   <section id="hero">
     <header>
       <nav class="navbar navbar-expand-lg bg-body-tertiary">
@@ -646,28 +649,28 @@
   
         <!-- Contact Form -->
         <div class="col-2">
-          <form id="contactForm">
+          <form id="contactForm" method="POST" action="insert.php">
             <h2>Send Message</h2>
   
             <div class="form-row">
               <label for="name">Full Name</label>
-              <input type="text" id="name" class="form-field" placeholder="Enter your full name">
+              <input type="text" id="name" name="name" class="form-field" placeholder="Enter your full name">
               <span class="error-message" id="nameError"></span>
             </div>
   
             <div class="form-row">
               <label for="email">Email</label>
-              <input type="email" id="email" class="form-field" placeholder="Enter your email">
+              <input type="email" id="email" name="email" class="form-field" placeholder="Enter your email">
               <span class="error-message" id="emailError"></span>
             </div>
   
             <div class="form-row">
               <label for="message">Type your message...</label>
-              <textarea id="message" class="form-field" placeholder="Write your message" rows="3"></textarea>
+              <textarea id="message" name="message" class="form-field" placeholder="Write your message" rows="3"></textarea>
               <span class="error-message" id="messageError"></span>
             </div>
   
-            <input type="button" class="send-btn" value="Send" onclick="validateForm()">
+            <input type="button" name="submitbtn" class="send-btn" value="Send" onclick="validateForm()">
           </form>
         </div>
       </div>
